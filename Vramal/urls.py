@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from Vramal.ramal import urls
 
 urlpatterns = [
+
+	url(r'^$', include(urls)),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^pessoa/', include(admin.site.urls)),
+    
 ]

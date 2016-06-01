@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Verifica Ramal{% endblock %}</title>
+    <!-- Bootstrap -->
+
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href=" /static /static/css/default.css" rel="stylesheet">
+
+    <script src="/static/jquery/js/jquery-1.11.1.min.js "></script>
+    <script src=" /static/bootstrap/js/bootstrap.min.js "></script>
+    
+    {% block css %}{% endblock %}
+    {% block js %}{% endblock %}
+</head>
+<body>
+<div class="navbar-wrapper">
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              
+                {% block tabs %}
+                   
+                {% endblock %}
+            </ul>
+           
+        </div>
+    </div>
+</div>
+{% block container %}
+
+{% endblock %}
+<div class="footer">
+    <div class="container">
+        <p class="text-muted text-right">VerificaRamal: <a target="_blank"
+                                                               href="https://github.com/gabriel-goto/VerificaRamais">Git
+            Hub</a></p>
+    </div>
+</div>
+</body>
+</html>
